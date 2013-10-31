@@ -1,1 +1,2 @@
 ogr2ogr -f "GeoJSON" -t_srs http://spatialreference.org/ref/epsg/4326/ district.geojson swissBOUNDARIES3D_1_1_TLM_BEZIRKSGEBIET.shp
+ogr2ogr -f "GeoJSON" -t_srs http://spatialreference.org/ref/epsg/4326/ canton.geojson swissBOUNDARIES3D_1_1_TLM_KANTONSGEBIET.shp
