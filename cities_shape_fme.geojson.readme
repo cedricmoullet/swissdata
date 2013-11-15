@@ -1,0 +1,2 @@
+source: SHAPE LV03 (https://github.com/interactivethings/swiss-maps.git)
+Reprojection Parameters: FME Reprojector, Source EPSG:21781, Destination: ESPG:4326, Allow Arc And Allipse Stroking YES
