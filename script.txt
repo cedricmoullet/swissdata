@@ -13,7 +13,3 @@ ogr2ogr -F "ESRI Shapefile" swissBOUNDARIES3D_1_1_TLM_HOHEITSGEBIETconv.dbf swis
 ogr2ogr -f "GeoJSON" -select UUID,BEZIRKSNUM,NAME,KANTONSNUM,EINWOHNERZ -t_srs http://spatialreference.org/ref/epsg/4326/ -s_srs http://spatialreference.org/ref/epsg/2056/ district.geojson swissBOUNDARIES3D_1_1_TLM_BEZIRKSGEBIET.shp
 ogr2ogr -f "GeoJSON" -select UUID,KANTONSNUM,NAME,EINWOHNERZ -t_srs http://spatialreference.org/ref/epsg/4326/ -s_srs http://spatialreference.org/ref/epsg/2056/ canton.geojson swissBOUNDARIES3D_1_1_TLM_KANTONSGEBIET.shp
 ogr2ogr -f "GeoJSON" -select UUID,NAME,BFS_NUMMER,BEZIRKSNUM,KANTONSNUM,EINWOHNERZ -t_srs http://spatialreference.org/ref/epsg/4326/ -s_srs http://spatialreference.org/ref/epsg/2056/ cities.geojson swissBOUNDARIES3D_1_1_TLM_HOHEITSGEBIET.shp
-
-ogr2ogr -f "KML" -t_srs http://spatialreference.org/ref/epsg/4326/ district.kml district.geojson
-ogr2ogr -f "KML" -t_srs http://spatialreference.org/ref/epsg/4326/ canton.kml canton.geojson
-ogr2ogr -f "KML" -t_srs http://spatialreference.org/ref/epsg/4326/ cities.kml cities.geojson
